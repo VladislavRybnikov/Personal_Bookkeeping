@@ -1,0 +1,2 @@
+C:\Users\user\source\repos\Personal_Bookkeeping\ClassLibrary1\obj\Debug\PersonalBookkeeping.BL.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Personal_Bookkeeping\ClassLibrary1\obj\Debug\PersonalBookkeeping.BL.csproj.CoreCompileInputs.cache

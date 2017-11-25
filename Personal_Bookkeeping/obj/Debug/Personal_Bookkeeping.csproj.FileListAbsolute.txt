@@ -1,0 +1,12 @@
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\Personal_Bookkeeping.exe.config
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\Personal_Bookkeeping.exe
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\Personal_Bookkeeping.pdb
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.Form1.resources
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.Properties.Resources.resources
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.csproj.GenerateResource.Cache
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.exe
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.pdb
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.HelpForm.resources
+c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.MainForm.resources
