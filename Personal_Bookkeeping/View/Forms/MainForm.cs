@@ -16,5 +16,11 @@ namespace Personal_Bookkeeping.View.Forms
         {
             InitializeComponent();
         }
+
+        private void convertorFormBtn_Click(object sender, EventArgs e)
+        {
+            ConverterForm converter = new ConverterForm();
+            converter.Show();
+        }
     }
 }

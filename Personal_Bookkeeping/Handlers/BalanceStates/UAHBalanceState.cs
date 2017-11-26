@@ -13,7 +13,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
         public UAHBalanceState()
         {
             Name = "UAH";
-            IndexToDollar = 1;
+            IndexToDollar = 0.037;
         }
 
 

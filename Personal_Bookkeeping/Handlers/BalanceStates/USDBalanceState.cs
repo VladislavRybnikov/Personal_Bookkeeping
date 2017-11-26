@@ -30,7 +30,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public IResult ConvertToUAH(IBalance balance)
         {
-            USDBalanceState uah = (USDBalanceState)StateFactoryHolder
+            UAHBalanceState uah = (UAHBalanceState)StateFactoryHolder
                 .factory.GetBalanceState("UAH");
             Result result = new Result();
             result.Message = "Converted to " + uah.Name;
@@ -42,7 +42,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public IResult ConvertToEUR(IBalance balance)
         {
-            USDBalanceState eur = (USDBalanceState)StateFactoryHolder
+            EURBalanceState eur = (EURBalanceState)StateFactoryHolder
                 .factory.GetBalanceState("EUR");
             Result result = new Result();
             result.Message = "Converted to " + eur.Name;

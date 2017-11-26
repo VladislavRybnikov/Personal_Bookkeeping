@@ -10,3 +10,5 @@ c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\P
 c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.pdb
 c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.HelpForm.resources
 c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.MainForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.ConverterForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.ProfitAndLesionForm.resources

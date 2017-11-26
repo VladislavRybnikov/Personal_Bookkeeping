@@ -97,7 +97,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(484, 417);
+            this.ClientSize = new System.Drawing.Size(482, 417);
             this.Controls.Add(this.tabControl1);
             this.Name = "ProfitAndLesionForm";
             this.Text = "ProfitAndLesionFormcs";

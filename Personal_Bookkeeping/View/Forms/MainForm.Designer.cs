@@ -179,6 +179,7 @@
             this.convertorFormBtn.Size = new System.Drawing.Size(122, 120);
             this.convertorFormBtn.TabIndex = 25;
             this.convertorFormBtn.UseVisualStyleBackColor = true;
+            this.convertorFormBtn.Click += new System.EventHandler(this.convertorFormBtn_Click);
             // 
             // calendarBtn
             // 
