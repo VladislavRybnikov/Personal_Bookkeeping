@@ -1,6 +1,6 @@
-﻿using Bookkeeping.Entities.Common.Result;
+﻿using Personal_Bookkeeping.Entities.Common.Result;
 using Personal_Bookkeeping.Abstract.Common;
-using Personal_Bookkeeping.Abstract.Common.Result;
+using Personal_Bookkeeping.Abstract.Common.IResults;
 using Personal_Bookkeeping.Holders;
 
 namespace Personal_Bookkeeping.Handlers.BalanceStates

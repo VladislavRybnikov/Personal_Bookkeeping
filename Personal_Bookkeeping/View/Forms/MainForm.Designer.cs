@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.txtPanel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,56 +36,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.convertorFormBtn = new System.Windows.Forms.Button();
-            this.calendarBtn = new System.Windows.Forms.Button();
-            this.fondFormBtn = new System.Windows.Forms.Button();
-            this.costsFormBtn = new System.Windows.Forms.Button();
-            this.statisticsFormBtn = new System.Windows.Forms.Button();
-            this.exelFormBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.txtPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtPanel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.costsFormBtn = new System.Windows.Forms.Button();
+            this.exelFormBtn = new System.Windows.Forms.Button();
+            this.statisticsFormBtn = new System.Windows.Forms.Button();
+            this.fondFormBtn = new System.Windows.Forms.Button();
+            this.calendarBtn = new System.Windows.Forms.Button();
+            this.convertorFormBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.txtPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtPanel1
-            // 
-            this.txtPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel1.BackgroundImage")));
-            this.txtPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtPanel1.Controls.Add(this.label7);
-            this.txtPanel1.Location = new System.Drawing.Point(3, 17);
-            this.txtPanel1.Name = "txtPanel1";
-            this.txtPanel1.Size = new System.Drawing.Size(217, 34);
-            this.txtPanel1.TabIndex = 18;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(52, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "calendar";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.money;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 69);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 43);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
             // 
             // label8
             // 
@@ -168,90 +136,6 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Manage all costs";
             // 
-            // convertorFormBtn
-            // 
-            this.convertorFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.converter;
-            this.convertorFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.convertorFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.convertorFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.convertorFormBtn.Location = new System.Drawing.Point(43, 148);
-            this.convertorFormBtn.Name = "convertorFormBtn";
-            this.convertorFormBtn.Size = new System.Drawing.Size(122, 120);
-            this.convertorFormBtn.TabIndex = 25;
-            this.convertorFormBtn.UseVisualStyleBackColor = true;
-            this.convertorFormBtn.Click += new System.EventHandler(this.convertorFormBtn_Click);
-            // 
-            // calendarBtn
-            // 
-            this.calendarBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.calendar;
-            this.calendarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.calendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calendarBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.calendarBtn.Location = new System.Drawing.Point(200, 148);
-            this.calendarBtn.Name = "calendarBtn";
-            this.calendarBtn.Size = new System.Drawing.Size(122, 120);
-            this.calendarBtn.TabIndex = 23;
-            this.calendarBtn.UseVisualStyleBackColor = true;
-            // 
-            // fondFormBtn
-            // 
-            this.fondFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.family;
-            this.fondFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fondFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fondFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.fondFormBtn.Location = new System.Drawing.Point(350, 148);
-            this.fondFormBtn.Name = "fondFormBtn";
-            this.fondFormBtn.Size = new System.Drawing.Size(122, 120);
-            this.fondFormBtn.TabIndex = 24;
-            this.fondFormBtn.UseVisualStyleBackColor = true;
-            // 
-            // costsFormBtn
-            // 
-            this.costsFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.Wallet_icon;
-            this.costsFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.costsFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.costsFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.costsFormBtn.Location = new System.Drawing.Point(43, 5);
-            this.costsFormBtn.Name = "costsFormBtn";
-            this.costsFormBtn.Size = new System.Drawing.Size(122, 120);
-            this.costsFormBtn.TabIndex = 21;
-            this.costsFormBtn.UseVisualStyleBackColor = true;
-            this.costsFormBtn.Click += new System.EventHandler(this.costsFormBtn_Click);
-            // 
-            // statisticsFormBtn
-            // 
-            this.statisticsFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.statistic;
-            this.statisticsFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.statisticsFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.statisticsFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.statisticsFormBtn.Location = new System.Drawing.Point(200, 5);
-            this.statisticsFormBtn.Name = "statisticsFormBtn";
-            this.statisticsFormBtn.Size = new System.Drawing.Size(122, 120);
-            this.statisticsFormBtn.TabIndex = 20;
-            this.statisticsFormBtn.UseVisualStyleBackColor = true;
-            // 
-            // exelFormBtn
-            // 
-            this.exelFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.excelIcon;
-            this.exelFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exelFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exelFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.exelFormBtn.Location = new System.Drawing.Point(350, 5);
-            this.exelFormBtn.Name = "exelFormBtn";
-            this.exelFormBtn.Size = new System.Drawing.Size(122, 120);
-            this.exelFormBtn.TabIndex = 19;
-            this.exelFormBtn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.downBanner;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 362);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(778, 147);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -308,6 +192,123 @@
             this.splitContainer1.SplitterDistance = 255;
             this.splitContainer1.TabIndex = 34;
             // 
+            // txtPanel1
+            // 
+            this.txtPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel1.BackgroundImage")));
+            this.txtPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtPanel1.Controls.Add(this.label7);
+            this.txtPanel1.Location = new System.Drawing.Point(3, 17);
+            this.txtPanel1.Name = "txtPanel1";
+            this.txtPanel1.Size = new System.Drawing.Size(217, 34);
+            this.txtPanel1.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(52, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 20);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "calendar";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.money;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(9, 69);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 43);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // costsFormBtn
+            // 
+            this.costsFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.Wallet_icon;
+            this.costsFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.costsFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.costsFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.costsFormBtn.Location = new System.Drawing.Point(43, 5);
+            this.costsFormBtn.Name = "costsFormBtn";
+            this.costsFormBtn.Size = new System.Drawing.Size(122, 120);
+            this.costsFormBtn.TabIndex = 21;
+            this.costsFormBtn.UseVisualStyleBackColor = true;
+            this.costsFormBtn.Click += new System.EventHandler(this.costsFormBtn_Click);
+            // 
+            // exelFormBtn
+            // 
+            this.exelFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.excelIcon;
+            this.exelFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exelFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exelFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.exelFormBtn.Location = new System.Drawing.Point(350, 5);
+            this.exelFormBtn.Name = "exelFormBtn";
+            this.exelFormBtn.Size = new System.Drawing.Size(122, 120);
+            this.exelFormBtn.TabIndex = 19;
+            this.exelFormBtn.UseVisualStyleBackColor = true;
+            // 
+            // statisticsFormBtn
+            // 
+            this.statisticsFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.statistic;
+            this.statisticsFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.statisticsFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.statisticsFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.statisticsFormBtn.Location = new System.Drawing.Point(200, 5);
+            this.statisticsFormBtn.Name = "statisticsFormBtn";
+            this.statisticsFormBtn.Size = new System.Drawing.Size(122, 120);
+            this.statisticsFormBtn.TabIndex = 20;
+            this.statisticsFormBtn.UseVisualStyleBackColor = true;
+            // 
+            // fondFormBtn
+            // 
+            this.fondFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.family;
+            this.fondFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fondFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fondFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.fondFormBtn.Location = new System.Drawing.Point(350, 148);
+            this.fondFormBtn.Name = "fondFormBtn";
+            this.fondFormBtn.Size = new System.Drawing.Size(122, 120);
+            this.fondFormBtn.TabIndex = 24;
+            this.fondFormBtn.UseVisualStyleBackColor = true;
+            // 
+            // calendarBtn
+            // 
+            this.calendarBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.calendar;
+            this.calendarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.calendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.calendarBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.calendarBtn.Location = new System.Drawing.Point(200, 148);
+            this.calendarBtn.Name = "calendarBtn";
+            this.calendarBtn.Size = new System.Drawing.Size(122, 120);
+            this.calendarBtn.TabIndex = 23;
+            this.calendarBtn.UseVisualStyleBackColor = true;
+            this.calendarBtn.Click += new System.EventHandler(this.calendarBtn_Click);
+            // 
+            // convertorFormBtn
+            // 
+            this.convertorFormBtn.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.converter;
+            this.convertorFormBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.convertorFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.convertorFormBtn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.convertorFormBtn.Location = new System.Drawing.Point(43, 148);
+            this.convertorFormBtn.Name = "convertorFormBtn";
+            this.convertorFormBtn.Size = new System.Drawing.Size(122, 120);
+            this.convertorFormBtn.TabIndex = 25;
+            this.convertorFormBtn.UseVisualStyleBackColor = true;
+            this.convertorFormBtn.Click += new System.EventHandler(this.convertorFormBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.downBanner;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 362);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(778, 147);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,16 +319,16 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.txtPanel1.ResumeLayout(false);
-            this.txtPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.txtPanel1.ResumeLayout(false);
+            this.txtPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

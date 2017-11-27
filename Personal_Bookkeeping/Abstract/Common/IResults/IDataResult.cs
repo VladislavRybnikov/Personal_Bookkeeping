@@ -1,4 +1,4 @@
-﻿namespace Personal_Bookkeeping.Abstract.Common.Result
+﻿namespace Personal_Bookkeeping.Abstract.Common.IResults
 {
     public interface IDataResult<T> : IResult
     {

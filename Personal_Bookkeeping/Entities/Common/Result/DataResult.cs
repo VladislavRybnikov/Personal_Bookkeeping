@@ -1,7 +1,7 @@
-﻿using Personal_Bookkeeping.Abstract.Common.Result;
+﻿using Personal_Bookkeeping.Abstract.Common.IResults;
 
 
-namespace Bookkeeping.Entities.Common.Result
+namespace Personal_Bookkeeping.Entities.Common.Result
 {
     public class DataResult<T> : IDataResult<T>
     {

@@ -29,5 +29,11 @@ namespace Personal_Bookkeeping.View.Forms
             manager.Show();
 
         }
+
+        private void calendarBtn_Click(object sender, EventArgs e)
+        {
+            CallendarForm callendar = new CallendarForm();
+            callendar.Show();
+        }
     }
 }

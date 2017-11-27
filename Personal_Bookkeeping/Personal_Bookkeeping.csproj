@@ -60,6 +60,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\Common\FondAbstract\FondDecorator.cs" />
+    <Compile Include="Abstract\Common\FondAbstract\IFond.cs" />
     <Compile Include="Abstract\Common\IAccount.cs" />
     <Compile Include="Abstract\Common\IBalance.cs" />
     <Compile Include="Abstract\Common\IBalanceState.cs" />
@@ -70,8 +72,8 @@
     <Compile Include="Abstract\Common\ICurrencyConvertor.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\IPLBase.cs" />
     <Compile Include="Abstract\Common\Prototyping\IResultPrototype.cs" />
-    <Compile Include="Abstract\Common\Result\IDataResult.cs" />
-    <Compile Include="Abstract\Common\Result\IResult.cs" />
+    <Compile Include="Abstract\Common\IResults\IDataResult.cs" />
+    <Compile Include="Abstract\Common\IResults\IResult.cs" />
     <Compile Include="AccountManaging\AccountManager.cs" />
     <Compile Include="Entities\Common\Earning.cs" />
     <Compile Include="Handlers\Account.cs" />
@@ -81,11 +83,18 @@
     <Compile Include="Handlers\BalanceStates\UAHBalanceState.cs" />
     <Compile Include="Handlers\BalanceStates\USDBalanceState.cs" />
     <Compile Include="Entities\Common\Spending.cs" />
+    <Compile Include="Handlers\ConcreteFonds\FamilyFond.cs" />
     <Compile Include="Holders\AccountHolder.cs" />
     <Compile Include="Holders\CurrencyHolder.cs" />
     <Compile Include="Entities\Common\Result\DataResult.cs" />
     <Compile Include="Entities\Common\Result\Result.cs" />
     <Compile Include="Holders\StateFactoryHolder.cs" />
+    <Compile Include="View\Forms\CallendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\CallendarForm.Designer.cs">
+      <DependentUpon>CallendarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\ConverterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +133,9 @@
     <Compile Include="View\Forms\ProfitAndLesionForm.Designer.cs">
       <DependentUpon>ProfitAndLesionForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Forms\CallendarForm.resx">
+      <DependentUpon>CallendarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\ConverterForm.resx">
       <DependentUpon>ConverterForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,5 +268,18 @@
   <ItemGroup>
     <None Include="Resources\convertBtn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tittleL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Glass-Panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar1.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

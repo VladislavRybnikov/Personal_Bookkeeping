@@ -1,5 +1,5 @@
 ﻿using Personal_Bookkeeping.Abstract.Common;
-using Personal_Bookkeeping.Abstract.Common.Result;
+using Personal_Bookkeeping.Abstract.Common.IResults;
 
 namespace Personal_Bookkeeping.Handlers
 {

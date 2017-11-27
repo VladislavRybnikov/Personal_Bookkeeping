@@ -16,7 +16,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Bookkeeping.Entities.Common.Result.DataResult&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="Personal_Bookkeeping.Entities.Common.Result.DataResult&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="2.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAAIAAAAAA=</HashCode>
@@ -24,7 +24,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Bookkeeping.Entities.Common.Result.Result" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="Personal_Bookkeeping.Entities.Common.Result.Result" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="2.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAgAAAAAAAAAAIAAAABA=</HashCode>
@@ -35,7 +35,7 @@
   <Class Name="Personal_Bookkeeping.Handlers.Account" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="4.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAQAAoAAAQAAAAEAAACAAAAAAIAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAAAQAAoAAAQAAAAEAAACAAAAAAIAAAA=</HashCode>
       <FileName>Handlers\Account.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.177" Collapsed="true" />
@@ -103,7 +103,7 @@
   <Interface Name="Personal_Bookkeeping.Abstract.Common.IAccount" Collapsed="true">
     <Position X="4.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAQAAgAAAQAAAAAAAACAAAAAAIAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAAAQAAgAAAQAAAAAAAACAAAAAAIAAAA=</HashCode>
       <FileName>Abstract\Common\IAccount.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -170,18 +170,18 @@
       <FileName>Abstract\Common\Prototyping\IResultPrototype.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Personal_Bookkeeping.Abstract.Common.Result.IDataResult&lt;T&gt;" Collapsed="true">
+  <Interface Name="Personal_Bookkeeping.Abstract.Common.IResults.IDataResult&lt;T&gt;" Collapsed="true">
     <Position X="0.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstract\Common\Result\IDataResult.cs</FileName>
+      <FileName>Abstract\Common\IResults\IDataResult.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Personal_Bookkeeping.Abstract.Common.Result.IResult" Collapsed="true">
+  <Interface Name="Personal_Bookkeeping.Abstract.Common.IResults.IResult" Collapsed="true">
     <Position X="0.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAA=</HashCode>
-      <FileName>Abstract\Common\Result\IResult.cs</FileName>
+      <FileName>Abstract\Common\IResults\IResult.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
