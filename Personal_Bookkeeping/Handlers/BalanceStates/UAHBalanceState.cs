@@ -42,7 +42,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public IResult ConvertToEUR(IBalance balance)
         {
-            USDBalanceState eur = (USDBalanceState)StateFactoryHolder
+            EURBalanceState eur = (EURBalanceState)StateFactoryHolder
                 .factory.GetBalanceState("EUR");
             balance.Count = balance.Count * balance.Currency.IndexToDollar / eur.IndexToDollar;
             balance.Currency = eur;
@@ -54,7 +54,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
         }
         public string GetStrValue(double count)
         {
-            return count.ToString("#.###") + " " + this.Name;
+            return count.ToString("0.000") + " " + this.Name;
         }
     }
 }

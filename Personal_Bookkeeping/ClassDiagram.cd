@@ -86,13 +86,6 @@
       <FileName>Holders\AccountHolder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Personal_Bookkeeping.Holders.CurrencyHolder" Collapsed="true">
-    <Position X="8.5" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Holders\CurrencyHolder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Personal_Bookkeeping.Holders.StateFactoryHolder" Collapsed="true">
     <Position X="6.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>

@@ -54,7 +54,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public string GetStrValue(double count)
         {
-            return count.ToString("#.###") + " " + this.Name;
+            return count.ToString("0.000") + " " + this.Name;
         }
 
     }

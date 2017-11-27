@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Personal_Bookkeeping.Entities.Common.Result;
 using Personal_Bookkeeping.Abstract.Common.IResults;
-using Personal_Bookkeeping.Abstract.Common.ProfitAndLesion;
 
 namespace Personal_Bookkeeping.Abstract.Common.FondAbstract
 {
@@ -11,6 +10,8 @@ namespace Personal_Bookkeeping.Abstract.Common.FondAbstract
         public IBalance FondBalance { get; set; }
         public List<IAccount> Members { get; set; }
         public string Name { get; set; }
+        public List<ISpending> Spendings { get; set; }
+        public List<IEarning> Earnings { get; set; }
 
         private IFond _component;
 
@@ -26,33 +27,22 @@ namespace Personal_Bookkeeping.Abstract.Common.FondAbstract
 
         public IResult AddMember(IAccount account)
         {
-            Result result = Result.GetDefaultResult();
-            if (account != null)
-            {
-                Members.Add(account);
-                result.Success = true;
-                result.Message = "new account added to " + this.Name;
-            }
-            else
-            {
-                result.Message = "can not add to " + this.Name;
-            }
-            throw new NotImplementedException();
+            return this._component.AddMember(account);
         }
 
         public IResult ReceiveMoney(IEarning earning)
         {
-            throw new NotImplementedException();
+            return this._component.ReceiveMoney(earning);
         }
 
         public IResult SpendMoney(ISpending spending)
         {
-            throw new NotImplementedException();
+            return this._component.SpendMoney(spending);
         }
 
         public virtual string GetString()
         {
-            return this.Name;
+            return this._component.GetString();
         }
     }
 }

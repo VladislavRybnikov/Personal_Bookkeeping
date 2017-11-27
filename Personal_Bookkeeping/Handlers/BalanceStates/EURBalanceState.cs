@@ -13,6 +13,8 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public EURBalanceState()
         {
+            Name = "EUR";
+            IndexToDollar = 1.182;
             _stateResult = Result.GetDefaultResult();
         }
 
@@ -31,7 +33,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public IResult ConvertToUAH(IBalance balance)
         {
-            USDBalanceState uah = (USDBalanceState)StateFactoryHolder
+            UAHBalanceState uah = (UAHBalanceState)StateFactoryHolder
                 .factory.GetBalanceState("UAH");
             balance.Count = balance.Count * balance.Currency.IndexToDollar / uah.IndexToDollar;
             balance.Currency = uah;
@@ -51,7 +53,7 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
         }
         public string GetStrValue(double count)
         {
-            return count.ToString("#.###") + " " + this.Name;
+            return count.ToString("0.000") + " " + this.Name;
         }
     }
 }

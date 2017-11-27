@@ -84,8 +84,8 @@
     <Compile Include="Handlers\BalanceStates\USDBalanceState.cs" />
     <Compile Include="Entities\Common\Spending.cs" />
     <Compile Include="Handlers\ConcreteFonds\FamilyFond.cs" />
+    <Compile Include="Handlers\ConcreteFonds\Fond.cs" />
     <Compile Include="Holders\AccountHolder.cs" />
-    <Compile Include="Holders\CurrencyHolder.cs" />
     <Compile Include="Entities\Common\Result\DataResult.cs" />
     <Compile Include="Entities\Common\Result\Result.cs" />
     <Compile Include="Holders\StateFactoryHolder.cs" />

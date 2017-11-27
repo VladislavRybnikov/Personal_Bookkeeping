@@ -1,6 +1,5 @@
 ﻿using Personal_Bookkeeping.Abstract.Common.ProfitAndLesion;
 using Personal_Bookkeeping.Abstract.Common.IResults;
-using Personal_Bookkeeping.Handlers;
 using System.Collections.Generic;
 
 namespace Personal_Bookkeeping.Abstract.Common.FondAbstract
@@ -11,6 +10,8 @@ namespace Personal_Bookkeeping.Abstract.Common.FondAbstract
         List<IAccount> Members { get; set; }
         IBalance FondBalance { get; set; }
         IResult AddMember(IAccount account);
+        List<ISpending> Spendings { get; set; }
+        List<IEarning> Earnings { get; set; }
         string GetString();
     }
 }

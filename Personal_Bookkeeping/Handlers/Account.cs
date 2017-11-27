@@ -17,6 +17,8 @@ namespace Personal_Bookkeeping.Handlers
 
         public Account(string name, string password, IBalance balance)
         {
+            Spendings = new List<ISpending>();
+            Earnings = new List<IEarning>();
             Name = name;
             Password = password;
             Balance = balance;
