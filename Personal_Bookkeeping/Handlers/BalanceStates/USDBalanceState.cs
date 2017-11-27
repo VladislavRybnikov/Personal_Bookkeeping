@@ -9,20 +9,18 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
     {
         public string Name { get; set; }
         public double IndexToDollar { get; set; }
+        private Result _stateResult;
+
         public USDBalanceState()
         {
             Name = "USD";
             IndexToDollar = 1;
+            _stateResult = Result.GetDefaultResult();
         }
 
-        public string GetStrValue(double count)
-        {
-            return count + " " + this.Name;
-        }
-    
         public IResult ConvertToUSD(IBalance balance)
         {
-            Result result = new Result();
+            IResult result = _stateResult.Clone();
             result.Success = false;
             result.Message = "Already in " + this.Name;
             return result;
@@ -32,23 +30,32 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
         {
             UAHBalanceState uah = (UAHBalanceState)StateFactoryHolder
                 .factory.GetBalanceState("UAH");
-            Result result = new Result();
-            result.Message = "Converted to " + uah.Name;
             balance.Count = balance.Count * balance.Currency.IndexToDollar / uah.IndexToDollar;
             balance.Currency = uah;
+
+            IResult result = _stateResult.Clone();
+            result.Message = "Converted to " + uah.Name;
             result.Success = true;
             return result;
         }
 
         public IResult ConvertToEUR(IBalance balance)
         {
-            EURBalanceState eur = (EURBalanceState)StateFactoryHolder
-                .factory.GetBalanceState("EUR");
-            Result result = new Result();
-            result.Message = "Converted to " + eur.Name;
+            USDBalanceState eur = (USDBalanceState)StateFactoryHolder
+               .factory.GetBalanceState("EUR");
             balance.Count = balance.Count * balance.Currency.IndexToDollar / eur.IndexToDollar;
             balance.Currency = eur;
+
+            IResult result = _stateResult.Clone();
+            result.Message = "Converted to " + eur.Name;
+            result.Success = true;
             return result;
         }
+
+        public string GetStrValue(double count)
+        {
+            return count.ToString("#.###") + " " + this.Name;
+        }
+
     }
 }

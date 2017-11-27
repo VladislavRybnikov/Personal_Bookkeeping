@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Personal_Bookkeeping.View.Forms
 {
-    public partial class ProfitAndLesionForm : Form
+    public partial class MoneyManagerForm : Form
     {
-        public ProfitAndLesionForm()
+        public MoneyManagerForm()
         {
             InitializeComponent();
         }

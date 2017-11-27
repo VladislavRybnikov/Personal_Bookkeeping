@@ -22,5 +22,12 @@ namespace Personal_Bookkeeping.View.Forms
             ConverterForm converter = new ConverterForm();
             converter.Show();
         }
+
+        private void costsFormBtn_Click(object sender, EventArgs e)
+        {
+            MoneyManagerForm manager = new MoneyManagerForm();
+            manager.Show();
+
+        }
     }
 }

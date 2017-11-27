@@ -1,6 +1,6 @@
 ﻿namespace Personal_Bookkeeping.View.Forms
 {
-    partial class ProfitAndLesionForm
+    partial class MoneyManagerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,49 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pageControl = new System.Windows.Forms.TabControl();
+            this.lesionPage = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.profitPage = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.pageControl.SuspendLayout();
+            this.lesionPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.profitPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // pageControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(2, 4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(480, 413);
-            this.tabControl1.TabIndex = 0;
+            this.pageControl.Controls.Add(this.lesionPage);
+            this.pageControl.Controls.Add(this.profitPage);
+            this.pageControl.Location = new System.Drawing.Point(2, 4);
+            this.pageControl.Name = "pageControl";
+            this.pageControl.SelectedIndex = 0;
+            this.pageControl.Size = new System.Drawing.Size(480, 413);
+            this.pageControl.TabIndex = 0;
             // 
-            // tabPage1
+            // lesionPage
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(472, 387);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(472, 387);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.lesionPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lesionPage.Controls.Add(this.pictureBox1);
+            this.lesionPage.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lesionPage.Location = new System.Drawing.Point(4, 22);
+            this.lesionPage.Name = "lesionPage";
+            this.lesionPage.Padding = new System.Windows.Forms.Padding(3);
+            this.lesionPage.Size = new System.Drawing.Size(472, 387);
+            this.lesionPage.TabIndex = 0;
+            this.lesionPage.Text = "Add new spending";
             // 
             // pictureBox1
             // 
@@ -82,6 +72,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // profitPage
+            // 
+            this.profitPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.profitPage.Controls.Add(this.pictureBox2);
+            this.profitPage.Location = new System.Drawing.Point(4, 22);
+            this.profitPage.Name = "profitPage";
+            this.profitPage.Padding = new System.Windows.Forms.Padding(3);
+            this.profitPage.Size = new System.Drawing.Size(472, 387);
+            this.profitPage.TabIndex = 1;
+            this.profitPage.Text = "Add new earning";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.profit;
@@ -92,19 +93,19 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // ProfitAndLesionForm
+            // MoneyManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(482, 417);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "ProfitAndLesionForm";
-            this.Text = "ProfitAndLesionFormcs";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.Controls.Add(this.pageControl);
+            this.Name = "MoneyManagerForm";
+            this.Text = "Money manager";
+            this.pageControl.ResumeLayout(false);
+            this.lesionPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.profitPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -112,10 +113,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl pageControl;
+        private System.Windows.Forms.TabPage lesionPage;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage profitPage;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

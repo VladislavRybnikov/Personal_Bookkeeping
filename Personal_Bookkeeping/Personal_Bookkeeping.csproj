@@ -63,11 +63,13 @@
     <Compile Include="Abstract\Common\IAccount.cs" />
     <Compile Include="Abstract\Common\IBalance.cs" />
     <Compile Include="Abstract\Common\IBalanceState.cs" />
+    <Compile Include="Abstract\Common\Prototyping\IPrototype.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\IEarning.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\IMoneyHandler.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\ISpending.cs" />
     <Compile Include="Abstract\Common\ICurrencyConvertor.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\IPLBase.cs" />
+    <Compile Include="Abstract\Common\Prototyping\IResultPrototype.cs" />
     <Compile Include="Abstract\Common\Result\IDataResult.cs" />
     <Compile Include="Abstract\Common\Result\IResult.cs" />
     <Compile Include="AccountManaging\AccountManager.cs" />
@@ -147,6 +149,7 @@
     <EmbeddedResource Include="View\Forms\ProfitAndLesionForm.resx">
       <DependentUpon>ProfitAndLesionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

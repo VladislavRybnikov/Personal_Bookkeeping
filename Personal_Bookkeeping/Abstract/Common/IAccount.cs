@@ -10,6 +10,7 @@ namespace Personal_Bookkeeping.Abstract.Common
         List<ISpending> Spendings { get; set; }
         List<IEarning> Earnings { get; set; }
         IBalance Balance { get; set; }
+        string GetBalanceStrValue();
 
     }
 }

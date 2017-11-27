@@ -67,5 +67,10 @@ namespace Personal_Bookkeeping.Handlers
 
             return result;
         }
+
+        public string GetBalanceStrValue()
+        {
+            return Balance.GetStrValue();
+        }
     }
 }

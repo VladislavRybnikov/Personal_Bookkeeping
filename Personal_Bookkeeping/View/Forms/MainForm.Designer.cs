@@ -216,6 +216,7 @@
             this.costsFormBtn.Size = new System.Drawing.Size(122, 120);
             this.costsFormBtn.TabIndex = 21;
             this.costsFormBtn.UseVisualStyleBackColor = true;
+            this.costsFormBtn.Click += new System.EventHandler(this.costsFormBtn_Click);
             // 
             // statisticsFormBtn
             // 

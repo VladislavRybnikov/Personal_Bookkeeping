@@ -21,7 +21,7 @@ namespace Personal_Bookkeeping.View.Forms
             InitializeComponent();
         }
 
-        private void convertBtn_Click(object sender, EventArgs e)
+        private void ConvertBtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -31,14 +31,14 @@ namespace Personal_Bookkeeping.View.Forms
                 if (fromUSDChkBx.Checked && !fromUAHChkBx.Checked && !fromEURChkBx.Checked)
                     fromCurrency = (USDBalanceState)StateFactoryHolder.factory.GetBalanceState("USD");
                 else if (!fromUSDChkBx.Checked && fromUAHChkBx.Checked && !fromEURChkBx.Checked)
-                    fromCurrency = StateFactoryHolder.factory.GetBalanceState("UAH");
+                    fromCurrency = (UAHBalanceState)StateFactoryHolder.factory.GetBalanceState("UAH");
                 else if (!fromUSDChkBx.Checked && !fromUAHChkBx.Checked && fromEURChkBx.Checked)
-                    fromCurrency = StateFactoryHolder.factory.GetBalanceState("EUR");
+                    fromCurrency = (EURBalanceState)StateFactoryHolder.factory.GetBalanceState("EUR");
                 else
                     throw new Exception();
 
                 IBalance balance = new Balance(balanceCount, fromCurrency);
-
+                
                 if (toUSDChkBx.Checked && !toUAHChkBx.Checked && !toEURChkBx.Checked)
                     balance.ConvertToUSD();
                 else if (!toUSDChkBx.Checked && toUAHChkBx.Checked && !toEURChkBx.Checked)
@@ -48,7 +48,7 @@ namespace Personal_Bookkeeping.View.Forms
                 else
                     throw new Exception();
 
-                toTxtBx.Text = balance.Count.ToString("#.###");
+                toTxtBx.Text = balance.GetStrValue();
             }
             catch
             {

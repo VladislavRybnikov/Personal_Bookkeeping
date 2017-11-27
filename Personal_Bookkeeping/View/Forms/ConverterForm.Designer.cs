@@ -144,7 +144,7 @@
             this.convertBtn.Size = new System.Drawing.Size(62, 58);
             this.convertBtn.TabIndex = 10;
             this.convertBtn.UseVisualStyleBackColor = false;
-            this.convertBtn.Click += new System.EventHandler(this.convertBtn_Click);
+            this.convertBtn.Click += new System.EventHandler(this.ConvertBtn_Click);
             // 
             // arrowPicBx
             // 
