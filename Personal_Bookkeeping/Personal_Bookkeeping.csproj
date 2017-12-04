@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -49,6 +49,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,34 +62,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\Common\FondAbstract\FondDecorator.cs" />
+    <Compile Include="Abstract\Common\AccountDecorator.cs" />
     <Compile Include="Abstract\Common\FondAbstract\IFond.cs" />
     <Compile Include="Abstract\Common\IAccount.cs" />
     <Compile Include="Abstract\Common\IBalance.cs" />
     <Compile Include="Abstract\Common\IBalanceState.cs" />
+    <Compile Include="Abstract\Common\ProfitAndLesion\ITransaction.cs" />
+    <Compile Include="Abstract\Common\ProfitAndLesion\ITransationType.cs" />
     <Compile Include="Abstract\Common\Prototyping\IPrototype.cs" />
-    <Compile Include="Abstract\Common\ProfitAndLesion\IEarning.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\IMoneyHandler.cs" />
-    <Compile Include="Abstract\Common\ProfitAndLesion\ISpending.cs" />
-    <Compile Include="Abstract\Common\ICurrencyConvertor.cs" />
     <Compile Include="Abstract\Common\ProfitAndLesion\IPLBase.cs" />
     <Compile Include="Abstract\Common\Prototyping\IResultPrototype.cs" />
     <Compile Include="Abstract\Common\IResults\IDataResult.cs" />
     <Compile Include="Abstract\Common\IResults\IResult.cs" />
-    <Compile Include="AccountManaging\AccountManager.cs" />
-    <Compile Include="Entities\Common\Earning.cs" />
+    <Compile Include="Configurations\Enums\ExcelTableType.cs" />
+    <Compile Include="Configurations\Enums\CurrencyType.cs" />
+    <Compile Include="Configurations\Enums\MessageType.cs" />
+    <Compile Include="Configurations\Enums\TransactionName.cs" />
+    <Compile Include="Configurations\Enums\TransactionTypes.cs" />
+    <Compile Include="Configurations\Holders\TransactionNameHolder.cs" />
+    <Compile Include="Entities\Common\Transaction.cs" />
+    <Compile Include="Entities\Common\TransactionType.cs" />
     <Compile Include="Handlers\Account.cs" />
+    <Compile Include="Handlers\AccountManager.cs" />
     <Compile Include="Handlers\Balance.cs" />
     <Compile Include="Handlers\BalanceStates\BalanceStateFactory.cs" />
     <Compile Include="Handlers\BalanceStates\EURBalanceState.cs" />
     <Compile Include="Handlers\BalanceStates\UAHBalanceState.cs" />
     <Compile Include="Handlers\BalanceStates\USDBalanceState.cs" />
-    <Compile Include="Entities\Common\Spending.cs" />
     <Compile Include="Handlers\ConcreteFonds\FamilyFond.cs" />
     <Compile Include="Handlers\ConcreteFonds\Fond.cs" />
-    <Compile Include="Holders\AccountHolder.cs" />
+    <Compile Include="Handlers\Excel\ExcelTransactProcessor.cs" />
+    <Compile Include="Handlers\FondMember.cs" />
+    <Compile Include="Configurations\Holders\AccountHolder.cs" />
     <Compile Include="Entities\Common\Result\DataResult.cs" />
     <Compile Include="Entities\Common\Result\Result.cs" />
-    <Compile Include="Holders\StateFactoryHolder.cs" />
+    <Compile Include="Configurations\Holders\LogMessageHolder.cs" />
+    <Compile Include="Configurations\Holders\MessageHolder.cs" />
+    <Compile Include="Configurations\Holders\StateFactoryHolder.cs" />
     <Compile Include="View\Forms\CallendarForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +118,12 @@
     <Compile Include="View\Forms\ExcelForm.Designer.cs">
       <DependentUpon>ExcelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Forms\FondForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\FondForm.Designer.cs">
+      <DependentUpon>FondForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +138,12 @@
     <Compile Include="View\Forms\HelpForm.Designer.cs">
       <DependentUpon>HelpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Forms\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,11 +156,23 @@
     <Compile Include="View\Forms\ProfitAndLesionForm.Designer.cs">
       <DependentUpon>ProfitAndLesionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Forms\StattisticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\StattisticForm.Designer.cs">
+      <DependentUpon>StattisticForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Forms\CallendarForm.resx">
       <DependentUpon>CallendarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\ConverterForm.resx">
       <DependentUpon>ConverterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\ExcelForm.resx">
+      <DependentUpon>ExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\FondForm.resx">
+      <DependentUpon>FondForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -155,13 +190,18 @@
     <EmbeddedResource Include="View\Forms\HelpForm.resx">
       <DependentUpon>HelpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\ProfitAndLesionForm.resx">
       <DependentUpon>ProfitAndLesionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram.cd" />
+    <EmbeddedResource Include="View\Forms\StattisticForm.resx">
+      <DependentUpon>StattisticForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -280,6 +320,32 @@
   <ItemGroup>
     <None Include="Resources\calendar1.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\addFile2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelWork\ExcelWork.csproj">
+      <Project>{89624251-7fe5-44ae-adb6-55cee8860822}</Project>
+      <Name>ExcelWork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase\BookkeepingDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataBase\BookkeepingDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BookkeepingDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

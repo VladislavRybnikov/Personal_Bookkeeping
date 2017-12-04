@@ -1,6 +1,7 @@
 ﻿using Personal_Bookkeeping.Abstract.Common.Prototyping;
 using Personal_Bookkeeping.Abstract.Common.IResults;
-
+using Personal_Bookkeeping.Holders;
+using Personal_Bookkeeping.Enums;
 
 namespace Personal_Bookkeeping.Entities.Common.Result
 {
@@ -11,9 +12,11 @@ namespace Personal_Bookkeeping.Entities.Common.Result
 
         public static Result GetDefaultResult()
         {
-            Result result = new Result();
-            result.Message = "default message";
-            result.Success = false;
+            Result result = new Result
+            {
+                Message = MessageHolder.GetMessage(MessageType.Default),
+                Success = false
+            };
             return result;
         }
 

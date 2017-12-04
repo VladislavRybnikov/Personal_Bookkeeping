@@ -10,8 +10,8 @@ namespace Personal_Bookkeeping.Abstract.Common.FondAbstract
         List<IAccount> Members { get; set; }
         IBalance FondBalance { get; set; }
         IResult AddMember(IAccount account);
-        List<ISpending> Spendings { get; set; }
-        List<IEarning> Earnings { get; set; }
+        IResult HasMember(IAccount account);
+        List<ITransaction> Transactions { get; set; }
         string GetString();
     }
 }

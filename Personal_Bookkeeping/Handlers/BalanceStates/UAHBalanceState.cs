@@ -2,9 +2,11 @@
 using Personal_Bookkeeping.Abstract.Common;
 using Personal_Bookkeeping.Abstract.Common.IResults;
 using Personal_Bookkeeping.Holders;
+using Personal_Bookkeeping.Enums;
 
 namespace Personal_Bookkeeping.Handlers.BalanceStates
 {
+    
     public class UAHBalanceState : IBalanceState
     {
         public double IndexToDollar { get; set; }
@@ -13,21 +15,22 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
 
         public UAHBalanceState()
         {
-            Name = "UAH";
+            Name = CurrencyType.UAH.ToString();
             IndexToDollar = 0.037;
             _stateResult = Result.GetDefaultResult();
         }
 
-
         public IResult ConvertToUSD(IBalance balance)
         {
             USDBalanceState usd = (USDBalanceState)StateFactoryHolder
-                 .factory.GetBalanceState("USD");
-            balance.Count = balance.Count * balance.Currency.IndexToDollar / usd.IndexToDollar;
+                 .factory.GetBalanceState(CurrencyType.USD.ToString());
+            balance.Count = balance.Count * balance.Currency.IndexToDollar
+                / usd.IndexToDollar;
             balance.Currency = usd;
 
             IResult result = _stateResult.Clone();
-            result.Message = "Converted to " + usd.Name;
+            result.Message = MessageHolder.GetMessage(MessageType.Convert)
+                + usd.Name;
             result.Success = true;
             return result;
         }
@@ -36,19 +39,22 @@ namespace Personal_Bookkeeping.Handlers.BalanceStates
         {
             IResult result = _stateResult.Clone();
             result.Success = false;
-            result.Message = "Already in " + this.Name;
+            result.Message = MessageHolder.GetMessage(MessageType.AlreadyIn)
+                + this.Name;
             return result;
         }
 
         public IResult ConvertToEUR(IBalance balance)
         {
             EURBalanceState eur = (EURBalanceState)StateFactoryHolder
-                .factory.GetBalanceState("EUR");
-            balance.Count = balance.Count * balance.Currency.IndexToDollar / eur.IndexToDollar;
+                .factory.GetBalanceState(CurrencyType.EUR.ToString());
+            balance.Count = balance.Count * balance.Currency.IndexToDollar
+                / eur.IndexToDollar;
             balance.Currency = eur;
 
             IResult result = _stateResult.Clone();
-            result.Message = "Converted to " + eur.Name;
+            result.Message = MessageHolder.GetMessage(MessageType.Convert)
+                + eur.Name;
             result.Success = true;
             return result;
         }

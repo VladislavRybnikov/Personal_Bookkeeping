@@ -13,3 +13,10 @@ c:\users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\P
 C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.ConverterForm.resources
 C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.MoneyManagerForm.resources
 C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.CallendarForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.LogForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.ExcelForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.FondForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\ExcelWork.exe
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\ExcelWork.pdb
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\ExcelWork.exe.config
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.StattisticForm.resources

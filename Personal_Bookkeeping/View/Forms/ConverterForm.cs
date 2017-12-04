@@ -48,5 +48,10 @@ namespace Personal_Bookkeeping.View.Forms
                 toTxtBx.Text = "error...";
             }
         }
+
+        private void convertBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

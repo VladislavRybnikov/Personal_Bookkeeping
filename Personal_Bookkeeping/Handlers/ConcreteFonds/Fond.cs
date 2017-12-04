@@ -4,6 +4,8 @@ using Personal_Bookkeeping.Abstract.Common.FondAbstract;
 using Personal_Bookkeeping.Abstract.Common.IResults;
 using Personal_Bookkeeping.Entities.Common.Result;
 using Personal_Bookkeeping.Holders;
+using Personal_Bookkeeping.Enums;
+using Personal_Bookkeeping.Abstract.Common.ProfitAndLesion;
 
 namespace Personal_Bookkeeping.Handlers.ConcreteFonds
 {
@@ -12,8 +14,7 @@ namespace Personal_Bookkeeping.Handlers.ConcreteFonds
         public string Name { get; set; }
         public List<IAccount> Members { get; set; }
         public IBalance FondBalance { get; set; }
-        public List<ISpending> Spendings { get; set; }
-        public List<IEarning> Earnings { get; set; }
+        public List<ITransaction> Transactions { get; set; }
 
         public Fond(string name, IBalance initialBalance)
         {
@@ -21,8 +22,7 @@ namespace Personal_Bookkeeping.Handlers.ConcreteFonds
             this.FondBalance = initialBalance;
 
             this.Members = new List<IAccount>();
-            this.Spendings = new List<ISpending>();
-            this.Earnings = new List<IEarning>();
+            this.Transactions = new List<ITransaction>();
         }
 
         public IResult AddMember(IAccount account)
@@ -32,11 +32,13 @@ namespace Personal_Bookkeeping.Handlers.ConcreteFonds
             {
                 Members.Add(account);
                 result.Success = true;
-                result.Message = "new account added to " + this.Name;
+                result.Message = MessageHolder.GetMessage(MessageType
+                    .AccountAdd) + this.Name;
             }
             else
             {
-                result.Message = "can not add to " + this.Name;
+                result.Message = MessageHolder.GetMessage(MessageType
+                    .CanntAdd) + this.Name;
             }
             return result;
         }
@@ -46,49 +48,71 @@ namespace Personal_Bookkeeping.Handlers.ConcreteFonds
             return this.Name;
         }
 
-        public IResult ReceiveMoney(IEarning earning)
+        public IResult ReceiveMoney(ITransaction earning)
         {
             IResult result = new Result();
-            if (this.FondBalance.Currency.Name.Equals("USD"))
+            if (this.FondBalance.Currency.Name.Equals(CurrencyType.USD
+                .ToString()))
                 earning.Amount.ConvertToUSD();
-            else if (this.FondBalance.Currency.Name.Equals("EUR"))
+            else if (this.FondBalance.Currency.Name.Equals(CurrencyType
+                .EUR.ToString()))
                 earning.Amount.ConvertToEUR();
-            else if (this.FondBalance.Currency.Name.Equals("UAH"))
+            else if (this.FondBalance.Currency.Name.Equals(CurrencyType
+                .UAH.ToString()))
                 earning.Amount.ConvertToUAH();
 
             this.FondBalance.Count += earning.Amount.Count;
-            this.Earnings.Add(earning);
+            this.Transactions.Add(earning);
             result.Success = true;
-            result.Message = string.Format("{0} received {1} ({2})", this.Name,
+            result.Message = string.Format(MessageHolder.GetMessage(MessageType.EarnMoney), this.Name,
                 earning.Amount.GetStrValue(), earning.Name);
 
             return result;
         }
 
-        public IResult SpendMoney(ISpending spending)
+        public IResult SpendMoney(ITransaction spending)
         {
-            if (this.FondBalance.Currency.Name.Equals("USD"))
-                spending.Cost.ConvertToUSD();
+            if (this.FondBalance.Currency.Name.Equals(CurrencyType.USD))
+                spending.Amount.ConvertToUSD();
             else if (this.FondBalance.Currency.Name.Equals(StateFactoryHolder
-                .factory.GetBalanceState("EUR").Name))
-                spending.Cost.ConvertToEUR();
+                .factory.GetBalanceState(CurrencyType.EUR.ToString()).Name))
+                spending.Amount.ConvertToEUR();
             else if (this.FondBalance.Currency.Name.Equals(StateFactoryHolder
-                .factory.GetBalanceState("UAH").Name))
-                spending.Cost.ConvertToUAH();
+                .factory.GetBalanceState(CurrencyType.UAH.ToString()).Name))
+                spending.Amount.ConvertToUAH();
 
             IResult result = new Result();
             result.Success = false;
-            if (this.FondBalance.Count >= spending.Cost.Count)
+            if (this.FondBalance.Count >= spending.Amount.Count)
             {
-                this.FondBalance.Count -= spending.Cost.Count;
-                this.Spendings.Add(spending);
-                result.Message = string.Format("{0} spent {1} on {2}", this.Name,
-                    spending.Cost.GetStrValue(), spending.Name);
+                this.FondBalance.Count -= spending.Amount.Count;
+                this.Transactions.Add(spending);
+                result.Message = string.Format(MessageHolder
+                    .GetMessage(MessageType.SpentMoney), this.Name,
+                    spending.Amount.GetStrValue(), spending.Name);
                 result.Success = true;
             }
             else
-                result.Message = "not enough money";
+                result.Message = MessageHolder.GetMessage(MessageType
+                    .NotEnoughMoney);
 
+            return result;
+        }
+
+        public IResult HasMember(IAccount account)
+        {
+            IResult result = Result.GetDefaultResult();
+            result.Message = string.Format(MessageHolder.GetMessage(MessageType
+                .NotAMember), account.Name);
+            foreach (var fondAccount in this.Members)
+            {
+                if (fondAccount.Equals(account))
+                {
+                    result.Success = true;
+                    result.Message = string.Format(MessageHolder
+                        .GetMessage(MessageType.FondMember), account.Name);
+                }
+            }
             return result;
         }
     }

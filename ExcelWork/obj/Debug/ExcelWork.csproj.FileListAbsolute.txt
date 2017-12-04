@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\ExcelWork\ExcelWork\obj\Debug\ExcelWork.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\ExcelWork\ExcelWork\obj\Debug\ExcelWork.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ExcelWork\ExcelWork\bin\Debug\ExcelWork.exe.config
+C:\Users\user\source\repos\ExcelWork\ExcelWork\bin\Debug\ExcelWork.exe
+C:\Users\user\source\repos\ExcelWork\ExcelWork\bin\Debug\ExcelWork.pdb
+C:\Users\user\source\repos\ExcelWork\ExcelWork\obj\Debug\ExcelWork.exe
+C:\Users\user\source\repos\ExcelWork\ExcelWork\obj\Debug\ExcelWork.pdb
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\bin\Debug\ExcelWork.exe.config
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\bin\Debug\ExcelWork.exe
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\bin\Debug\ExcelWork.pdb
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\obj\Debug\ExcelWork.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\obj\Debug\ExcelWork.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\obj\Debug\ExcelWork.exe
+C:\Users\user\source\repos\Personal_Bookkeeping\ExcelWork\obj\Debug\ExcelWork.pdb

@@ -3,7 +3,7 @@
     public interface IPLBase
     {
         string Name { get; set; }
-        string Descriptin { get; set; }
+        string Description { get; set; }
         
     }
 }

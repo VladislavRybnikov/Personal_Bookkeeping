@@ -73,6 +73,16 @@ namespace Personal_Bookkeeping.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addFile2 {
+            get {
+                object obj = ResourceManager.GetObject("addFile2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow {
             get {
                 object obj = ResourceManager.GetObject("arrow", resourceCulture);
@@ -166,6 +176,16 @@ namespace Personal_Bookkeeping.Properties {
         internal static System.Drawing.Bitmap downBanner {
             get {
                 object obj = ResourceManager.GetObject("downBanner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap excelBorder {
+            get {
+                object obj = ResourceManager.GetObject("excelBorder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +333,16 @@ namespace Personal_Bookkeeping.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reload {
+            get {
+                object obj = ResourceManager.GetObject("reload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sign_add {
             get {
                 object obj = ResourceManager.GetObject("sign-add", resourceCulture);
@@ -326,6 +356,16 @@ namespace Personal_Bookkeeping.Properties {
         internal static System.Drawing.Bitmap statistic {
             get {
                 object obj = ResourceManager.GetObject("statistic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistic1 {
+            get {
+                object obj = ResourceManager.GetObject("statistic1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -4,7 +4,7 @@ namespace Personal_Bookkeeping.Abstract.Common.ProfitAndLesion
 {
     public interface IMoneyHandler
     {
-        IResult SpendMoney(ISpending spending);
-        IResult ReceiveMoney(IEarning earning);
+        IResult SpendMoney(ITransaction spending);
+        IResult ReceiveMoney(ITransaction earning);
     }
 }

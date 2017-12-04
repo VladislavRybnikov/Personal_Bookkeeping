@@ -157,8 +157,8 @@
   <data name="statistic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tittleL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tittleL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calendar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="registerBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\registerBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,17 +181,26 @@
   <data name="sign-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sign-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="addFile2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addFile2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="downBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\downBanner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="helpPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\helpPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="downBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\downBanner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tittleL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tittleL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="costs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\costs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excelBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excelBorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="family" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\family.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,13 +208,16 @@
   <data name="accountPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accountPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bookkeeping-consulting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bookkeeping-consulting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Glass-Panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Glass-Panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="statistic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

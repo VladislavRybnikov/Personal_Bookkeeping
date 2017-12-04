@@ -29,46 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.label8 = new System.Windows.Forms.Label();
+            this.balanceLbl = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.balanceCountLbl = new System.Windows.Forms.Label();
+            this.refreshLbl = new System.Windows.Forms.Label();
+            this.refreshButton = new System.Windows.Forms.Button();
             this.txtPanel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.accountNameLbl = new System.Windows.Forms.Label();
             this.costsFormBtn = new System.Windows.Forms.Button();
             this.exelFormBtn = new System.Windows.Forms.Button();
             this.statisticsFormBtn = new System.Windows.Forms.Button();
             this.fondFormBtn = new System.Windows.Forms.Button();
             this.calendarBtn = new System.Windows.Forms.Button();
             this.convertorFormBtn = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logMessagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.txtPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label8
+            // balanceLbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(58, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 20);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "1250 USD";
+            this.balanceLbl.AutoSize = true;
+            this.balanceLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.balanceLbl.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.balanceLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.balanceLbl.Location = new System.Drawing.Point(9, 81);
+            this.balanceLbl.Name = "balanceLbl";
+            this.balanceLbl.Size = new System.Drawing.Size(64, 20);
+            this.balanceLbl.TabIndex = 31;
+            this.balanceLbl.Text = "balance:";
             // 
             // label6
             // 
@@ -136,43 +139,19 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Manage all costs";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(50, 144);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 20);
-            this.label9.TabIndex = 32;
-            this.label9.Text = "1250 USD";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label10.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(50, 187);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 20);
-            this.label10.TabIndex = 33;
-            this.label10.Text = "1250 USD";
-            // 
             // splitContainer1
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitContainer1.Location = new System.Drawing.Point(1, 12);
+            this.splitContainer1.Location = new System.Drawing.Point(1, 27);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.balanceCountLbl);
+            this.splitContainer1.Panel1.Controls.Add(this.refreshLbl);
+            this.splitContainer1.Panel1.Controls.Add(this.refreshButton);
             this.splitContainer1.Panel1.Controls.Add(this.txtPanel1);
-            this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
-            this.splitContainer1.Panel1.Controls.Add(this.label10);
-            this.splitContainer1.Panel1.Controls.Add(this.label8);
-            this.splitContainer1.Panel1.Controls.Add(this.label9);
+            this.splitContainer1.Panel1.Controls.Add(this.balanceLbl);
             // 
             // splitContainer1.Panel2
             // 
@@ -192,37 +171,64 @@
             this.splitContainer1.SplitterDistance = 255;
             this.splitContainer1.TabIndex = 34;
             // 
+            // balanceCountLbl
+            // 
+            this.balanceCountLbl.AutoSize = true;
+            this.balanceCountLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.balanceCountLbl.Font = new System.Drawing.Font("Haettenschweiler", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.balanceCountLbl.ForeColor = System.Drawing.Color.Teal;
+            this.balanceCountLbl.Location = new System.Drawing.Point(42, 128);
+            this.balanceCountLbl.Name = "balanceCountLbl";
+            this.balanceCountLbl.Size = new System.Drawing.Size(134, 40);
+            this.balanceCountLbl.TabIndex = 36;
+            this.balanceCountLbl.Text = "00.00  USD";
+            // 
+            // refreshLbl
+            // 
+            this.refreshLbl.AutoSize = true;
+            this.refreshLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.refreshLbl.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.refreshLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.refreshLbl.Location = new System.Drawing.Point(96, 291);
+            this.refreshLbl.Name = "refreshLbl";
+            this.refreshLbl.Size = new System.Drawing.Size(58, 20);
+            this.refreshLbl.TabIndex = 35;
+            this.refreshLbl.Text = "refresh";
+            // 
+            // refreshButton
+            // 
+            this.refreshButton.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.reload;
+            this.refreshButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.refreshButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refreshButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.refreshButton.Location = new System.Drawing.Point(97, 230);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(57, 58);
+            this.refreshButton.TabIndex = 34;
+            this.refreshButton.UseVisualStyleBackColor = true;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
             // txtPanel1
             // 
             this.txtPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel1.BackgroundImage")));
             this.txtPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtPanel1.Controls.Add(this.label7);
+            this.txtPanel1.Controls.Add(this.accountNameLbl);
             this.txtPanel1.Location = new System.Drawing.Point(3, 17);
             this.txtPanel1.Name = "txtPanel1";
             this.txtPanel1.Size = new System.Drawing.Size(217, 34);
             this.txtPanel1.TabIndex = 18;
             // 
-            // label7
+            // accountNameLbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(52, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "calendar";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Personal_Bookkeeping.Properties.Resources.money;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 69);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 43);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.accountNameLbl.AutoSize = true;
+            this.accountNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.accountNameLbl.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.accountNameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.accountNameLbl.Location = new System.Drawing.Point(4, 7);
+            this.accountNameLbl.Name = "accountNameLbl";
+            this.accountNameLbl.Size = new System.Drawing.Size(49, 20);
+            this.accountNameLbl.TabIndex = 31;
+            this.accountNameLbl.Text = "Name:";
             // 
             // costsFormBtn
             // 
@@ -235,7 +241,7 @@
             this.costsFormBtn.Size = new System.Drawing.Size(122, 120);
             this.costsFormBtn.TabIndex = 21;
             this.costsFormBtn.UseVisualStyleBackColor = true;
-            this.costsFormBtn.Click += new System.EventHandler(this.costsFormBtn_Click);
+            this.costsFormBtn.Click += new System.EventHandler(this.CostsFormBtn_Click);
             // 
             // exelFormBtn
             // 
@@ -248,6 +254,7 @@
             this.exelFormBtn.Size = new System.Drawing.Size(122, 120);
             this.exelFormBtn.TabIndex = 19;
             this.exelFormBtn.UseVisualStyleBackColor = true;
+            this.exelFormBtn.Click += new System.EventHandler(this.ExelFormBtn_Click);
             // 
             // statisticsFormBtn
             // 
@@ -260,6 +267,7 @@
             this.statisticsFormBtn.Size = new System.Drawing.Size(122, 120);
             this.statisticsFormBtn.TabIndex = 20;
             this.statisticsFormBtn.UseVisualStyleBackColor = true;
+            this.statisticsFormBtn.Click += new System.EventHandler(this.statisticsFormBtn_Click);
             // 
             // fondFormBtn
             // 
@@ -284,7 +292,7 @@
             this.calendarBtn.Size = new System.Drawing.Size(122, 120);
             this.calendarBtn.TabIndex = 23;
             this.calendarBtn.UseVisualStyleBackColor = true;
-            this.calendarBtn.Click += new System.EventHandler(this.calendarBtn_Click);
+            this.calendarBtn.Click += new System.EventHandler(this.CalendarBtn_Click);
             // 
             // convertorFormBtn
             // 
@@ -297,7 +305,32 @@
             this.convertorFormBtn.Size = new System.Drawing.Size(122, 120);
             this.convertorFormBtn.TabIndex = 25;
             this.convertorFormBtn.UseVisualStyleBackColor = true;
-            this.convertorFormBtn.Click += new System.EventHandler(this.convertorFormBtn_Click);
+            this.convertorFormBtn.Click += new System.EventHandler(this.ConvertorFormBtn_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(768, 24);
+            this.menuStrip1.TabIndex = 35;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logMessagesToolStripMenuItem});
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // logMessagesToolStripMenuItem
+            // 
+            this.logMessagesToolStripMenuItem.Name = "logMessagesToolStripMenuItem";
+            this.logMessagesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.logMessagesToolStripMenuItem.Text = "Log messages";
+            this.logMessagesToolStripMenuItem.Click += new System.EventHandler(this.LogMessagesToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -317,6 +350,9 @@
             this.ClientSize = new System.Drawing.Size(768, 504);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -327,9 +363,11 @@
             this.splitContainer1.ResumeLayout(false);
             this.txtPanel1.ResumeLayout(false);
             this.txtPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -347,12 +385,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button convertorFormBtn;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label accountNameLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label balanceLbl;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logMessagesToolStripMenuItem;
+        private System.Windows.Forms.Button refreshButton;
+        private System.Windows.Forms.Label refreshLbl;
+        private System.Windows.Forms.Label balanceCountLbl;
     }
 }

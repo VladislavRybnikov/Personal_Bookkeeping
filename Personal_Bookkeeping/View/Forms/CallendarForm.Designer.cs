@@ -59,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(346, 421);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Calendar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CallendarForm";
             this.Text = "CallendarForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -35,17 +35,17 @@
             this.toEURChkBx = new System.Windows.Forms.CheckBox();
             this.toUAHChkBx = new System.Windows.Forms.CheckBox();
             this.toUSDChkBx = new System.Windows.Forms.CheckBox();
+            this.txtPanel2 = new System.Windows.Forms.Panel();
+            this.toTxtBx = new System.Windows.Forms.TextBox();
+            this.txtPanel1 = new System.Windows.Forms.Panel();
+            this.fromTxtBx = new System.Windows.Forms.TextBox();
             this.convertBtn = new System.Windows.Forms.Button();
             this.arrowPicBx = new System.Windows.Forms.PictureBox();
             this.border = new System.Windows.Forms.PictureBox();
-            this.txtPanel1 = new System.Windows.Forms.Panel();
-            this.fromTxtBx = new System.Windows.Forms.TextBox();
-            this.txtPanel2 = new System.Windows.Forms.Panel();
-            this.toTxtBx = new System.Windows.Forms.TextBox();
+            this.txtPanel2.SuspendLayout();
+            this.txtPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrowPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.border)).BeginInit();
-            this.txtPanel1.SuspendLayout();
-            this.txtPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // fromUSDChkBx
@@ -132,6 +132,51 @@
             this.toUSDChkBx.Text = "USD";
             this.toUSDChkBx.UseVisualStyleBackColor = true;
             // 
+            // txtPanel2
+            // 
+            this.txtPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel2.BackgroundImage")));
+            this.txtPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtPanel2.Controls.Add(this.toTxtBx);
+            this.txtPanel2.Location = new System.Drawing.Point(54, 391);
+            this.txtPanel2.Name = "txtPanel2";
+            this.txtPanel2.Size = new System.Drawing.Size(318, 34);
+            this.txtPanel2.TabIndex = 18;
+            // 
+            // toTxtBx
+            // 
+            this.toTxtBx.BackColor = System.Drawing.Color.RoyalBlue;
+            this.toTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toTxtBx.ForeColor = System.Drawing.SystemColors.Window;
+            this.toTxtBx.Location = new System.Drawing.Point(14, 9);
+            this.toTxtBx.Name = "toTxtBx";
+            this.toTxtBx.ReadOnly = true;
+            this.toTxtBx.Size = new System.Drawing.Size(291, 19);
+            this.toTxtBx.TabIndex = 8;
+            this.toTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtPanel1
+            // 
+            this.txtPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel1.BackgroundImage")));
+            this.txtPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtPanel1.Controls.Add(this.fromTxtBx);
+            this.txtPanel1.Location = new System.Drawing.Point(54, 160);
+            this.txtPanel1.Name = "txtPanel1";
+            this.txtPanel1.Size = new System.Drawing.Size(318, 34);
+            this.txtPanel1.TabIndex = 18;
+            // 
+            // fromTxtBx
+            // 
+            this.fromTxtBx.BackColor = System.Drawing.Color.RoyalBlue;
+            this.fromTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fromTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fromTxtBx.ForeColor = System.Drawing.SystemColors.Window;
+            this.fromTxtBx.Location = new System.Drawing.Point(14, 9);
+            this.fromTxtBx.Name = "fromTxtBx";
+            this.fromTxtBx.Size = new System.Drawing.Size(291, 19);
+            this.fromTxtBx.TabIndex = 8;
+            this.fromTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // convertBtn
             // 
             this.convertBtn.BackColor = System.Drawing.Color.DarkCyan;
@@ -166,51 +211,6 @@
             this.border.TabIndex = 0;
             this.border.TabStop = false;
             // 
-            // txtPanel1
-            // 
-            this.txtPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel1.BackgroundImage")));
-            this.txtPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtPanel1.Controls.Add(this.fromTxtBx);
-            this.txtPanel1.Location = new System.Drawing.Point(54, 160);
-            this.txtPanel1.Name = "txtPanel1";
-            this.txtPanel1.Size = new System.Drawing.Size(318, 34);
-            this.txtPanel1.TabIndex = 18;
-            // 
-            // fromTxtBx
-            // 
-            this.fromTxtBx.BackColor = System.Drawing.Color.RoyalBlue;
-            this.fromTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fromTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fromTxtBx.ForeColor = System.Drawing.SystemColors.Window;
-            this.fromTxtBx.Location = new System.Drawing.Point(14, 9);
-            this.fromTxtBx.Name = "fromTxtBx";
-            this.fromTxtBx.Size = new System.Drawing.Size(291, 19);
-            this.fromTxtBx.TabIndex = 8;
-            this.fromTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtPanel2
-            // 
-            this.txtPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPanel2.BackgroundImage")));
-            this.txtPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtPanel2.Controls.Add(this.toTxtBx);
-            this.txtPanel2.Location = new System.Drawing.Point(54, 391);
-            this.txtPanel2.Name = "txtPanel2";
-            this.txtPanel2.Size = new System.Drawing.Size(318, 34);
-            this.txtPanel2.TabIndex = 18;
-            // 
-            // toTxtBx
-            // 
-            this.toTxtBx.BackColor = System.Drawing.Color.RoyalBlue;
-            this.toTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toTxtBx.ForeColor = System.Drawing.SystemColors.Window;
-            this.toTxtBx.Location = new System.Drawing.Point(14, 9);
-            this.toTxtBx.Name = "toTxtBx";
-            this.toTxtBx.ReadOnly = true;
-            this.toTxtBx.Size = new System.Drawing.Size(291, 19);
-            this.toTxtBx.TabIndex = 8;
-            this.toTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // ConverterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,14 +228,15 @@
             this.Controls.Add(this.fromUSDChkBx);
             this.Controls.Add(this.arrowPicBx);
             this.Controls.Add(this.border);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ConverterForm";
-            this.Text = "ConvertorForm";
-            ((System.ComponentModel.ISupportInitialize)(this.arrowPicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.border)).EndInit();
-            this.txtPanel1.ResumeLayout(false);
-            this.txtPanel1.PerformLayout();
+            this.Text = "Currency Converter";
             this.txtPanel2.ResumeLayout(false);
             this.txtPanel2.PerformLayout();
+            this.txtPanel1.ResumeLayout(false);
+            this.txtPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrowPicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.border)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

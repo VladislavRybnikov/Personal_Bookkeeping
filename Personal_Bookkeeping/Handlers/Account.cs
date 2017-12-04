@@ -3,68 +3,72 @@ using Personal_Bookkeeping.Abstract.Common;
 using Personal_Bookkeeping.Abstract.Common.IResults;
 using Personal_Bookkeeping.Entities.Common.Result;
 using Personal_Bookkeeping.Holders;
+using Personal_Bookkeeping.Enums;
+using Personal_Bookkeeping.Abstract.Common.ProfitAndLesion;
+using System;
 
 namespace Personal_Bookkeeping.Handlers
 {
     public class Account : IAccount
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public IBalance Balance { get; set; }
-
-        public List<ISpending> Spendings { get; set; }
-        public List<IEarning> Earnings { get; set; }
+        public List<ITransaction> Transactions { get; set; }
 
         public Account(string name, string password, IBalance balance)
         {
-            Spendings = new List<ISpending>();
-            Earnings = new List<IEarning>();
+            Transactions = new List<ITransaction>();
             Name = name;
             Password = password;
             Balance = balance;
         }
 
-        public IResult SpendMoney(ISpending spending)
+        public IResult SpendMoney(ITransaction spending)
         {
-            if (this.Balance.Currency.Name.Equals("USD"))
-                spending.Cost.ConvertToUSD();
+            if (this.Balance.Currency.Name.Equals(CurrencyType.USD.ToString()))
+                spending.Amount.ConvertToUSD();
             else if(this.Balance.Currency.Name.Equals(StateFactoryHolder
-                .factory.GetBalanceState("EUR").Name))
-                spending.Cost.ConvertToEUR();
+                .factory.GetBalanceState(CurrencyType.EUR.ToString()).Name))
+                spending.Amount.ConvertToEUR();
             else if (this.Balance.Currency.Name.Equals(StateFactoryHolder
-                .factory.GetBalanceState("UAH").Name))
-                spending.Cost.ConvertToUAH();
+                .factory.GetBalanceState(CurrencyType.UAH.ToString()).Name))
+                spending.Amount.ConvertToUAH();
 
             IResult result = new Result();
             result.Success = false;
-            if (this.Balance.Count >= spending.Cost.Count)
+            if (this.Balance.Count >= spending.Amount.Count)
             {
-                this.Balance.Count -= spending.Cost.Count;
-                this.Spendings.Add(spending);
-                result.Message = string.Format("{0} spent {1} on {2}", this.Name,
-                    spending.Cost.GetStrValue(), spending.Name);
+                this.Balance.Count -= spending.Amount.Count;
+                this.Transactions.Add(spending);
+                result.Message = string.Format(MessageHolder
+                    .GetMessage(MessageType.SpentMoney), this.Name,
+                    spending.Amount.GetStrValue(), spending.Name);
                 result.Success = true;
             }
             else
-                result.Message = "not enough money";
+                result.Message = MessageType.SpentMoney.ToString();
 
             return result;
         }
 
-        public IResult ReceiveMoney(IEarning earning)
+        public IResult ReceiveMoney(ITransaction earning)
         {
             IResult result = new Result();
-            if (this.Balance.Currency.Name.Equals("USD"))
+            if (this.Balance.Currency.Name.Equals(CurrencyType.USD))
                 earning.Amount.ConvertToUSD();
-            else if (this.Balance.Currency.Name.Equals("EUR"))
+            else if (this.Balance.Currency.Name.Equals(CurrencyType.EUR
+                .ToString()))
                 earning.Amount.ConvertToEUR();
-            else if (this.Balance.Currency.Name.Equals("UAH"))
+            else if (this.Balance.Currency.Name.Equals(CurrencyType.UAH))
                 earning.Amount.ConvertToUAH();
 
             this.Balance.Count += earning.Amount.Count;
-            this.Earnings.Add(earning);
+            this.Transactions.Add(earning);
             result.Success = true;
-            result.Message = string.Format("{0} received {1} ({2})", this.Name,
+            result.Message = string.Format(MessageHolder.GetMessage(MessageType
+                .EarnMoney), this.Name,
                 earning.Amount.GetStrValue(), earning.Name);
 
             return result;

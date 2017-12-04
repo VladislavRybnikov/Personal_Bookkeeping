@@ -7,8 +7,7 @@ namespace Personal_Bookkeeping.Abstract.Common
     {
         string Name { get; set; }
         string Password { get; set; }
-        List<ISpending> Spendings { get; set; }
-        List<IEarning> Earnings { get; set; }
+        List<ITransaction> Transactions { get; set; }
         IBalance Balance { get; set; }
         string GetBalanceStrValue();
 
