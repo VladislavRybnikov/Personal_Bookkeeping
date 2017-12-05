@@ -61,26 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\Common\FondAbstract\FondDecorator.cs" />
-    <Compile Include="Abstract\Common\AccountDecorator.cs" />
-    <Compile Include="Abstract\Common\FondAbstract\IFond.cs" />
-    <Compile Include="Abstract\Common\IAccount.cs" />
-    <Compile Include="Abstract\Common\IBalance.cs" />
-    <Compile Include="Abstract\Common\IBalanceState.cs" />
-    <Compile Include="Abstract\Common\ProfitAndLesion\ITransaction.cs" />
-    <Compile Include="Abstract\Common\ProfitAndLesion\ITransationType.cs" />
-    <Compile Include="Abstract\Common\Prototyping\IPrototype.cs" />
-    <Compile Include="Abstract\Common\ProfitAndLesion\IMoneyHandler.cs" />
-    <Compile Include="Abstract\Common\ProfitAndLesion\IPLBase.cs" />
-    <Compile Include="Abstract\Common\Prototyping\IResultPrototype.cs" />
-    <Compile Include="Abstract\Common\IResults\IDataResult.cs" />
-    <Compile Include="Abstract\Common\IResults\IResult.cs" />
-    <Compile Include="Configurations\Enums\ExcelTableType.cs" />
-    <Compile Include="Configurations\Enums\CurrencyType.cs" />
-    <Compile Include="Configurations\Enums\MessageType.cs" />
-    <Compile Include="Configurations\Enums\TransactionName.cs" />
-    <Compile Include="Configurations\Enums\TransactionTypes.cs" />
-    <Compile Include="Configurations\Holders\TransactionNameHolder.cs" />
     <Compile Include="Entities\Common\Transaction.cs" />
     <Compile Include="Entities\Common\TransactionType.cs" />
     <Compile Include="Handlers\Account.cs" />
@@ -94,12 +74,9 @@
     <Compile Include="Handlers\ConcreteFonds\Fond.cs" />
     <Compile Include="Handlers\Excel\ExcelTransactProcessor.cs" />
     <Compile Include="Handlers\FondMember.cs" />
-    <Compile Include="Configurations\Holders\AccountHolder.cs" />
     <Compile Include="Entities\Common\Result\DataResult.cs" />
     <Compile Include="Entities\Common\Result\Result.cs" />
-    <Compile Include="Configurations\Holders\LogMessageHolder.cs" />
-    <Compile Include="Configurations\Holders\MessageHolder.cs" />
-    <Compile Include="Configurations\Holders\StateFactoryHolder.cs" />
+    <Compile Include="Handlers\StateFactoryHolder.cs" />
     <Compile Include="View\Forms\CallendarForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,6 +305,10 @@
       <Project>{89624251-7fe5-44ae-adb6-55cee8860822}</Project>
       <Name>ExcelWork</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Personal_Bookkeeping.Abstract\Personal_Bookkeeping.Abstract.csproj">
+      <Project>{f249ce88-fdbf-4d8c-84d3-206ba361bda1}</Project>
+      <Name>Personal_Bookkeeping.Abstract</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reload.png" />
@@ -339,13 +320,7 @@
     <None Include="Resources\statistic1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\BookkeepingDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataBase\BookkeepingDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>BookkeepingDB.mdf</DependentUpon>
-    </Content>
+    <None Include="Resources\investment.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

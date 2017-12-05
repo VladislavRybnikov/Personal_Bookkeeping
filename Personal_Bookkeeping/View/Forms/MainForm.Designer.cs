@@ -280,6 +280,7 @@
             this.fondFormBtn.Size = new System.Drawing.Size(122, 120);
             this.fondFormBtn.TabIndex = 24;
             this.fondFormBtn.UseVisualStyleBackColor = true;
+            this.fondFormBtn.Click += new System.EventHandler(this.fondFormBtn_Click);
             // 
             // calendarBtn
             // 

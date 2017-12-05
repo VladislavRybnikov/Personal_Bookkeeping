@@ -1,13 +1,12 @@
 ﻿using Personal_Bookkeeping.Abstract.Common;
 using Personal_Bookkeeping.Abstract.Common.IResults;
 using Personal_Bookkeeping.Abstract.Common.ProfitAndLesion;
-using Personal_Bookkeeping.Configurations.Enums;
+using Personal_Bookkeeping.Abstract.Enums;
+using Personal_Bookkeeping.Abstract.Holders;
 using Personal_Bookkeeping.Entities.Common;
 using Personal_Bookkeeping.Entities.Common.Result;
-using Personal_Bookkeeping.Enums;
 using Personal_Bookkeeping.Handlers;
 using Personal_Bookkeeping.Handlers.BalanceStates;
-using Personal_Bookkeeping.Holders;
 using System;
 using System.Windows.Forms;
 
@@ -112,5 +111,15 @@ namespace Personal_Bookkeeping.View.Forms
 
         private void EarnButton_Click(object sender, EventArgs e) 
             => Transaction(TransactionTypes.Earning.ToString());
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lesionPage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

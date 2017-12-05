@@ -1,9 +1,5 @@
 ﻿using Personal_Bookkeeping.Abstract.Common.ProfitAndLesion;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Personal_Bookkeeping.Abstract.Common;
 
 namespace Personal_Bookkeeping.Entities.Common

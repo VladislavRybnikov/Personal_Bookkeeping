@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping.Abstract\obj\Debug\Personal_Bookkeeping.Abstract.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping.Abstract\obj\Debug\Personal_Bookkeeping.Abstract.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping.Abstract\bin\Debug\Personal_Bookkeeping.Abstract.dll
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping.Abstract\bin\Debug\Personal_Bookkeeping.Abstract.pdb
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping.Abstract\obj\Debug\Personal_Bookkeeping.Abstract.dll
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping.Abstract\obj\Debug\Personal_Bookkeeping.Abstract.pdb

@@ -16,5 +16,10 @@ namespace Personal_Bookkeeping.View.Forms
         {
             InitializeComponent();
         }
+
+        private void FondForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

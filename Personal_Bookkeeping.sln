@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal_Bookkeeping", "Per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelWork", "ExcelWork\ExcelWork.csproj", "{89624251-7FE5-44AE-ADB6-55CEE8860822}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal_Bookkeeping.Abstract", "Personal_Bookkeeping.Abstract\Personal_Bookkeeping.Abstract.csproj", "{F249CE88-FDBF-4D8C-84D3-206BA361BDA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{89624251-7FE5-44AE-ADB6-55CEE8860822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89624251-7FE5-44AE-ADB6-55CEE8860822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89624251-7FE5-44AE-ADB6-55CEE8860822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F249CE88-FDBF-4D8C-84D3-206BA361BDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F249CE88-FDBF-4D8C-84D3-206BA361BDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F249CE88-FDBF-4D8C-84D3-206BA361BDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F249CE88-FDBF-4D8C-84D3-206BA361BDA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

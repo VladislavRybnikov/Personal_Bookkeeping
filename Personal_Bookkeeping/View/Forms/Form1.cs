@@ -1,16 +1,9 @@
 ﻿using Personal_Bookkeeping.Abstract.Common;
-using Personal_Bookkeeping.Enums;
+using Personal_Bookkeeping.Abstract.Enums;
 using Personal_Bookkeeping.Handlers;
-using Personal_Bookkeeping.Holders;
 using Personal_Bookkeeping.View.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Personal_Bookkeeping

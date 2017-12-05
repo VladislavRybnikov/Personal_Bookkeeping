@@ -20,3 +20,5 @@ C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\E
 C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\ExcelWork.pdb
 C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\ExcelWork.exe.config
 C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\obj\Debug\Personal_Bookkeeping.View.Forms.StattisticForm.resources
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\Personal_Bookkeeping.Abstract.dll
+C:\Users\user\source\repos\Personal_Bookkeeping\Personal_Bookkeeping\bin\Debug\Personal_Bookkeeping.Abstract.pdb

@@ -1,7 +1,7 @@
 ﻿using Personal_Bookkeeping.Abstract.Common.Prototyping;
 using Personal_Bookkeeping.Abstract.Common.IResults;
-using Personal_Bookkeeping.Holders;
-using Personal_Bookkeeping.Enums;
+using Personal_Bookkeeping.Abstract.Holders;
+using Personal_Bookkeeping.Abstract.Enums;
 
 namespace Personal_Bookkeeping.Entities.Common.Result
 {
